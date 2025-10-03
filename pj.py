@@ -6,4 +6,5 @@ bot=TeleBot(Token)
 def show__message(message):
     bot.reply_to(message,'welcome to the my bots')
 
-bot.polling()
+
+bot.polling(none_stop=True,timeout=60)
